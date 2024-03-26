@@ -16,24 +16,7 @@ tasks = [{
 
 @app.route("/")
 def display_homepage():
-    return """
-<div>
-    <h3>
-        Welcome to this webpage!
-    </h3>
-    <p>
-        There are many things that you could put here.
-    </p>
-    <p>
-        However, I am not going to put anything interesting here just yet.
-    </p>
-    <p>
-        Take a look at Jason and his JSON files <a href="/tasks">{"Jason" : "Not Jay-Sawn"}</a>
-    </p>
-    <br>
-    <p>Or try going to <a href="/continue"> this page instead</a> (very experimental)</p>
-</div>
-"""
+    return render_template("index.html")
 
 
 @app.route('/tasks')

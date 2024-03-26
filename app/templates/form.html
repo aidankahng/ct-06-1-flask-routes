@@ -1,8 +1,12 @@
-<div>
-    <form action="/continue" method="post">
-        <label for="test_input">Add a line to the story:</label>
-        <input type="text" id="test_input" name="test_input" placeholder="type your input here" autofocus>
-        <button type="submit">Submit</button>
-        <p>Type 'reset' to reset the story</p>
-    </form>
-</div>
+{% extends "layout.html" %}
+
+{% block body %}
+    <div>
+        <form action="/continue" method="post">
+            <label for="test_input">Add a line to the story:</label>
+            <input type="text" id="test_input" name="test_input" placeholder="type your input here" autofocus>
+            <button type="submit">Submit</button>
+            <p>Type 'reset' to reset the story</p>
+        </form>
+    </div>
+{% endblock %}
